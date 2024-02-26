@@ -6,7 +6,7 @@ body {
 
 }
 
-/*CABECERA*/
+
 
 header {
   display: flex;
@@ -21,7 +21,7 @@ header {
 }
 
 
-/*LOGO*/
+
 
 .logo {
   position: absolute;
@@ -42,7 +42,7 @@ header {
   display:flex;
 }
 
-/*HORA*/
+
 
 
 .hora {
@@ -59,7 +59,7 @@ header {
 
 
 
-/*BOTON INGRESAR SALDO*/
+
 
 .botonIngresar {
   position: absolute;
@@ -83,7 +83,7 @@ header {
   background-color: rgb(31, 84, 40);
 }
 
-/*MAIN*/
+
 
 main {
   margin: 0 auto;
@@ -101,7 +101,7 @@ main {
  
 }
 
-/*CUADRO CARACTERISTICAS*/
+
 
 .cuadro_caracteristicas {
   position: absolute;
@@ -121,7 +121,7 @@ main {
 }
 
 
-/*TABLA NUMEROS*/
+
 .num_CF {
   position: absolute;
   margin-top: 20px;
@@ -175,7 +175,7 @@ main {
 }
 
 
-/*BOTONES, FICHAS y BARRA PROGRESO*/
+
 
 
 .bot_ficha {
@@ -309,7 +309,6 @@ transition: background-color 0.3s ease;
 }
 
 
-/*RULETA*/
 
 .ruleta {
 position: absolute;
@@ -321,7 +320,7 @@ margin-left: -3%;
 
 
 
-/*TABLA RULETA*/
+
 .tabla {
   position: absolute;
   margin-top: 20%;
@@ -481,7 +480,7 @@ table {
   transform: rotate(135deg) skew(15deg, 15deg);
 }
 
-/*BOTON COBRAR Y BENEFICIO*/
+
 
 
 .beneficio_cobrar {
@@ -531,7 +530,7 @@ table {
   
   }
   
-  /*CABECERA*/
+
   
   header {
     display: flex;
@@ -546,7 +545,7 @@ table {
   }
   
   
-  /*LOGO*/
+
   
   .logo {
     position: absolute;
@@ -563,8 +562,7 @@ table {
  
   
 
-  
-  /*HORA*/
+
   
   
   .hora {
@@ -581,7 +579,7 @@ table {
   
   
   
-  /*BOTON INGRESAR SALDO*/
+
   .botones {
     display:flex;
   }
@@ -610,8 +608,7 @@ table {
     color: white;
     background-color: rgb(31, 84, 40);
   }
-  
-  /*MAIN*/
+
   
   main {
     margin: 0 auto;
@@ -629,7 +626,7 @@ table {
    
   }
   
-  /*CUADRO CARACTERISTICAS*/
+
   
   .cuadro_caracteristicas {
     position: absolute;
@@ -650,7 +647,7 @@ table {
   }
   
   
-  /*TABLA NUMEROS*/
+
 
   #logo_caliente {
     width:30px;
@@ -710,7 +707,7 @@ table {
   }
   
   
-  /*BOTONES, FICHAS y BARRA PROGRESO*/
+
   
   
   .bot_ficha {
@@ -847,7 +844,7 @@ table {
   }
   
   
-  /*RULETA*/
+
   
   .ruleta {
   position: absolute;
@@ -862,7 +859,7 @@ table {
   
   
   
-  /*TABLA RULETA*/
+
   .tabla {
     position: absolute;
     margin-top: 22%;
@@ -1021,7 +1018,7 @@ table {
     transform: rotate(135deg) skew(15deg, 15deg);
   }
   
-  /*BOTON COBRAR Y BENEFICIO*/
+
   
   
   .beneficio_cobrar {
@@ -1060,8 +1057,4 @@ table {
   #cobrar:hover{
     background-color: #45aaf2;
     color: black;
-  }
-  
-  
-
-}
+  }
