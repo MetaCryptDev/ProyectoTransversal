@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${titulo}"></title>
+</head>
+
+<body>
+	<h1 th:text="${titulo}"></h1>
+	
+	<button> <a th:href="@{/usuario/alta}" method="get"> Alta usuario </a></button>
+	<button> <a th:href="@{/usuario/recuperarTodos}" method="get"> Ver Usuarios </a></button>
+	<br><br>
+	<button> <a th:href="@{/index}"> Volver atrás </a></button>
+
+</body>
+</html>

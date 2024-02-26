@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Carrera</title>
+    <link rel="stylesheet" type="text/css" href="/Galgos/Galgos.css">  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body onload="cargar()">
+    
+    <label th:text="${idUsuario}" name="idUsuario" id="idUsuario" style="display: none;"/>
+    
+    <!-- PARTE SUPERIOR -->
+    <img id="logo" src="Imagenes/logo2.PNG">
+    
+    <div id="lugarHoraCarrera">
+      <label id="lugarCarrera">PLACEHOLDER</label>
+      <label id="horaCarrera">00:00</label>
+    </div>
+
+    <div id="fechaHora">
+      <label> Hora Actual: </label>
+      <label id="hora"></label>
+    </div>
+
+    <!-- PARTE INTERMEDIA -->
+    <div id="cuadroMedio"></div>
+
+    <div id="cuadroMedioInfo">
+      <label id="corredor1">PERRO</label>
+      <p id="progreso1"><progress id="progressBar1" value="0" max="100"></progress></p>
+
+      <label id="corredor2">PERRO</label>
+      <p id="progreso2"><progress id="progressBar2" value="0" max="100"></progress></p>
+
+      <label id="corredor3">PERRO</label>
+      <p id="progreso3"><progress id="progressBar3" value="0" max="100"></progress></p>
+
+      <label id="corredor4">PERRO</label>
+      <p id="progreso4"><progress id="progressBar4" value="0" max="100"></progress></p>
+
+      <label id="corredor5">PERRO</label>
+      <p id="progreso5"><progress id="progressBar5" value="0" max="100"></progress></p>
+
+      <label id="corredor6">PERRO</label>
+      <p id="progreso6"><progress id="progressBar6" value="0" max="100"></progress></p>
+
+      <label id="corredor7">PERRO</label>
+      <p id="progreso7"><progress id="progressBar7" value="0" max="100"></progress></p>
+
+      <label id="corredor8">PERRO</label>
+      <p id="progreso8"><progress id="progressBar8" value="0" max="100"></progress></p>
+
+      <div class="empezar">
+        <button id="jugar">JUGAR</button>
+      </div>
+      <div class="nueva">
+        <button id="nuevaCarrera">NUEVA CARRERA</button>
+      </div>
+
+    <!-- GANADORES -->  
+      <label id="ganador1">PRIMERO</label>
+      <img id="perroGana1" src="Imagenes/doge.png">
+
+      <label id="ganador2">SEGUNDO</label>
+      <img id="perroGana2" src="Imagenes/chems.png">
+      
+      <label id="ganador3">TERCERO</label>
+      <img id="perroGana3" src="Imagenes/chems.png">
+
+
+      <img id="podio" src="Imagenes/podio.PNG">
+    </div>
+
+    <div id="progresoCorredores"></div>
+
+    <div id="progresoCorredoresInfo">
+      <label id="corredorInfo1">PERRO1</label>
+      <label id="id1">ID1</label>
+      <label id="ganancia1">GANANCIAS1</label>
+      
+      <label id="corredorInfo2">PERRO2</label>
+      <label id="id2">ID2</label>
+      <label id="ganancia2">GANANCIAS2</label>
+      
+      <label id="corredorInfo3">PERRO3</label>
+      <label id="id3">ID3</label>
+      <label id="ganancia3">GANANCIAS3</label>
+      
+      <label id="corredorInfo4">PERRO4</label>
+      <label id="id4">ID4</label>
+      <label id="ganancia4">GANANCIAS4</label>
+      
+      <label id="corredorInfo5">PERRO5</label>
+      <label id="id5">ID5</label>
+      <label id="ganancia5">GANANCIAS5</label>
+      
+      <label id="corredorInfo6">PERRO6</label>
+      <label id="id6">ID6</label>
+      <label id="ganancia6">GANANCIAS6</label>
+      
+      <label id="corredorInfo7">PERRO7</label>
+      <label id="id7">ID7</label>
+      <label id="ganancia7">GANANCIAS7</label>
+      
+      <label id="corredorInfo8">PERRO8</label>
+      <label id="id8">ID8</label>
+      <label id="ganancia8">GANANCIAS8</label>
+
+      <div class="apostar">
+        <button class="apuesta" onclick="mostrarModal('modalApostar')">Apostar</button>
+      </div>
+
+    </div>
+
+    <!-- CUADRO INFORMATIVO -->
+    <div id="cuadroInfo"></div>
+
+      <div id="saldo">
+        <p>Saldo:
+        <span id="lblsaldo" th:text="${lblSaldo}">0</span>
+        <span> € </span>
+        </p>
+      </div>
+      
+      <div id="apuesta">
+        <p>Cantidad Apostada:
+        <span id="cantidadApostada">0</span>
+        <span> € </span>
+        <span id="perro"></span>
+        </p>
+      </div>
+      
+      <div id="ganancias">
+        <p>Ganancias Obtenidas:
+        <span id="lblganancias">0</span>
+        <span> € </span>
+        </p>
+      </div>
+
+     <!-- INGRSAR Y RETIRAR DINERO -->
+        <div class="ingresarRetirar">
+          <button class="ingresar" onclick="mostrarModal('modalIngresar')">INGRESAR</button>
+          <button class="retirar" onclick="mostrarModal('modalRetirar')">RETIRAR</button>
+        </div>
+
+        <!-- Modal de Ingresar Dinero Ficticio -->
+        <div id="modalIngresar" class="modal">
+          <div class="modal-contenido">
+              <span class="cerrar" onclick="cerrarModal('modalIngresar')">&times;</span>
+              <h2>Ingrese la cantidad</h2>
+              <input type="number" id="ingresarCantidad">
+              <button id="btnAceptarSaldo">Aceptar</button>
+          </div>
+        </div>
+
+        <!-- Modal de Retirar Dinero Ficticio -->
+        <div id="modalRetirar" class="modal">
+          <div class="modal-contenido">
+              <span class="cerrar" onclick="cerrarModal('modalRetirar')">&times;</span>
+              <h2>SALDO RETIRADO</h2>
+              <button id="btnRetirarSaldo">Aceptar</button>
+          </div>
+        </div>
+
+         <!-- Modal de Apostar al Galgo -->
+         <div id="modalApostar" class="modal">
+          <div class="modal-contenido">
+              <span class="cerrar" onclick="cerrarModal('modalApostar')">&times;</span>
+              <h2>Indique la cantidad a apostar y el galgo</h2>
+              <input type="number" id="apostarCantidad">
+              <select id="galgos"></select>
+              <button id="btnApostar">Aceptar</button>
+          </div>
+        </div>
+   
+        <!-- SCRIPT -->
+     <script src="/Galgos/Galgos.js"></script>
+     
+  </body>
+</html>

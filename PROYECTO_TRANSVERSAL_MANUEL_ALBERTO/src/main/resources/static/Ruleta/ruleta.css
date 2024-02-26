@@ -1,0 +1,1067 @@
+body {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+  overflow-x: hidden; /* Para ocultar el desplazamiento horizontal */
+  padding: 0;
+
+}
+
+/*CABECERA*/
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  background-color: black; /* Fondo semi-transparente */
+  color: white;
+  height: 97px;
+  max-width:100%;
+  width: 1530px;
+
+}
+
+
+/*LOGO*/
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+ 
+}
+
+#imagen_logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.botones {
+  display:flex;
+}
+
+/*HORA*/
+
+
+.hora {
+  position: absolute;
+  top: 20px;
+  right: 160px;
+}
+
+#crono {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color:rgb(244, 244, 244) ;
+}
+
+
+
+/*BOTON INGRESAR SALDO*/
+
+.botonIngresar {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+#bot_ingresar {
+  line-height: 30px;
+  color:black;
+  background-color:lime;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#bot_ingresar:hover {
+  color: white;
+  background-color: rgb(31, 84, 40);
+}
+
+/*MAIN*/
+
+main {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 100%;
+  width: 1525px;
+  height: 83.4vh;
+  background: url("Imagenes/fondo.jpg") ;
+  mix-blend-mode: difference;
+  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+ 
+}
+
+/*CUADRO CARACTERISTICAS*/
+
+.cuadro_caracteristicas {
+  position: absolute;
+  margin-top: 20px;
+  right: 5%;
+
+
+}
+
+#cuadro {
+  padding: 5px; 
+  border: 5px solid black;
+  background-color:antiquewhite;
+  border-radius: 10%;
+  width: 300px;
+  height: 200px;
+}
+
+
+/*TABLA NUMEROS*/
+.num_CF {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+#table_num_CF {
+  background-color: rgba(22, 64, 32, 0.479);
+  width: 500px;
+  height: 180px;
+}
+
+.logo_caliente {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.logo_frios {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+#d_num {
+  border: 3px solid rgba(24, 23, 23, 0.753);
+}
+
+#d_C {
+  border: 3px solid rgba(24, 23, 23, 0.753);
+  
+}
+
+#d_F {
+  border: 3px solid rgba(24, 23, 23, 0.753);
+}
+
+#numeros {
+  margin: auto;
+  height: 20px;
+  color: white;
+}
+
+#calientes {
+  margin: auto;
+
+}
+
+#frios {
+  margin: auto;
+}
+
+
+/*BOTONES, FICHAS y BARRA PROGRESO*/
+
+
+.bot_ficha {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 40%;
+}
+
+#spin {
+  line-height: 25px;
+  color:black;
+  background-color:lime;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+#spin:hover {
+  color: white;
+  background-color: black;
+}
+
+#bot_borrar {
+  line-height: 25px;
+  color:black;
+  background-color:lime;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+#bot_borrar:hover {
+  color: white;
+  background-color: black;
+}
+
+#ficha1 {
+color:aliceblue;
+background-color:deeppink;
+border: 3px solid gold  ;
+width: 45px; 
+height: 45px;
+border-radius: 50%; 
+text-align: center; 
+line-height: 70%;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#ficha1:hover{
+  background-color: #45aaf2;
+}
+
+
+
+#ficha2 {
+  color:aliceblue;
+  background-color:blue;
+  border: 3px solid gold  ;
+  width: 45px; 
+  height: 45px;
+  border-radius: 50%; 
+  text-align: center; 
+  line-height: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#ficha2:hover{
+  background-color: #45aaf2;
+}
+
+#ficha3 {
+  color:aliceblue;
+  background-color:orangered;  
+  border: 3px solid gold;
+  width: 45px; 
+  height: 45px;
+  border-radius: 50%; 
+  text-align: center; 
+  line-height: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#ficha3:hover{
+  background-color: #45aaf2;
+}
+
+#ficha4 {
+  color:aliceblue;
+  background-color:purple;
+  border: 3px solid gold ;
+  width: 45px; 
+  height: 45px;
+  border-radius: 50%; 
+  text-align: center; 
+  line-height: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#ficha4:hover{
+  background-color: #45aaf2;
+}
+
+#bar_progreso {
+  border: 1px solid black;
+  background-color: black;
+  height: 20px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0;
+  height: 10px;
+  background-color: #73ff00;
+  border-radius: 5px;
+}
+
+
+/*RULETA*/
+
+.ruleta {
+position: absolute;
+margin-top:-5%;
+margin-left: -3%;
+}
+
+
+
+
+
+/*TABLA RULETA*/
+.tabla {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 26.5%;
+}
+
+
+table {
+  align-items: center;
+
+}
+
+
+#a {
+  background-color: green;
+  text-align: center;
+  border: 1px solid white;
+
+}
+
+#r {
+
+  background-color: red;
+  text-align: center;
+  border: 1px solid white;
+
+}
+
+#n {
+  background-color: black;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.bot_rojos {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_rojos:hover{
+  background-color: #45aaf2;
+}
+
+
+
+.bot_negros {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_negros:hover{
+  background-color: #45aaf2;
+}
+
+.bot_0 {
+  color: white;
+  background-color: green;
+  border: none;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_0:hover{
+  background-color: #45aaf2;
+}
+
+
+.bot_arriba {
+  color: white;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_arriba:hover{
+  background-color: #45aaf2;
+}
+
+.bot_abajo {
+  color: white;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_abajo:hover{
+  background-color: #45aaf2;
+}
+
+
+.bot_d {
+  color: white;
+  background-color: green;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bot_d:hover{
+  background-color: #45aaf2;
+}
+
+
+#rombo_rojo ,#rombo_negro {
+  margin: auto;
+}
+
+#no {
+  empty-cells: hide;
+
+}
+
+.rombo1 {
+  width: 15.5px;
+  height: 15.5px;
+  background: red;
+  color: transparent;
+  -webkit-transform: rotate(135deg) skew(15deg, 15deg);
+  -moz-transform: rotate(135deg) skew(15deg, 15deg);
+  -ms-transform: rotate(135deg) skew(15deg, 15deg);
+  -o-transform: rotate(135deg) skew(15deg, 15deg);
+  transform: rotate(135deg) skew(15deg, 15deg);
+}
+
+.rombo2 {
+  width: 15.5px;
+  height: 15.5px;
+  background: black;
+  color: transparent;
+  -webkit-transform: rotate(135deg) skew(15deg, 15deg);
+  -moz-transform: rotate(135deg) skew(15deg, 15deg);
+  -ms-transform: rotate(135deg) skew(15deg, 15deg);
+  -o-transform: rotate(135deg) skew(15deg, 15deg);
+  transform: rotate(135deg) skew(15deg, 15deg);
+}
+
+/*BOTON COBRAR Y BENEFICIO*/
+
+
+.beneficio_cobrar {
+  position: absolute;
+  margin-top: 24%;
+  margin-left: 10%;
+}
+
+
+#beneficio {
+  background-color: black;
+  color: gold;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding:5px;
+}
+
+#cobrar {
+  width: 100px;
+  height: 100px;
+  font-family: serif;
+  color: aliceblue;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 35%;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#cobrar:hover{
+  background-color: #45aaf2;
+  color: black;
+}
+
+
+@media only screen and (min-width:420px) and (max-width: 1000px)   {
+
+  body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    overflow-x: hidden; /* Para ocultar el desplazamiento horizontal */
+    padding: 0;
+  
+  }
+  
+  /*CABECERA*/
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    background-color: black; /* Fondo semi-transparente */
+    color: white;
+    height:45px;
+    width:1050px;
+    max-width: 120%;
+  
+  }
+  
+  
+  /*LOGO*/
+  
+  .logo {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+   
+  }
+  
+  #imagen_logo {
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+  }
+ 
+  
+
+  
+  /*HORA*/
+  
+  
+  .hora {
+    position: absolute;
+    top: 7px;
+    left: 843px;
+  }
+  
+  #crono {
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(244, 244, 244) ;
+  }
+  
+  
+  
+  /*BOTON INGRESAR SALDO*/
+  .botones {
+    display:flex;
+  }
+
+  .botonIngresar {
+    position: absolute;
+    top: 10px;
+    left: 932px;
+
+  }
+  
+  #bot_ingresar {
+    color:black;
+    background-color:lime;
+    padding: 1px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:90px;
+    height: auto;
+    font-size: 10px;
+  }
+  
+  #bot_ingresar:hover {
+    color: white;
+    background-color: rgb(31, 84, 40);
+  }
+  
+  /*MAIN*/
+  
+  main {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 120%;
+    width: 1036px;
+    height: 96.5vh;
+    background: url("Imagenes/fondo.jpg") ;
+    mix-blend-mode: difference;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+   
+  }
+  
+  /*CUADRO CARACTERISTICAS*/
+  
+  .cuadro_caracteristicas {
+    position: absolute;
+    margin-top: 20px;
+    left: 83%;
+  
+  
+  }
+  
+  #cuadro {
+    padding: 5px; 
+    border: 3px solid black;
+    background-color:antiquewhite;
+    border-radius: 10%;
+    width: 170px;
+    height: 115px;
+    font-size: 10px;
+  }
+  
+  
+  /*TABLA NUMEROS*/
+
+  #logo_caliente {
+    width:30px;
+    height: 30px;
+    padding: 2px;
+  }
+
+  #logo_frio {
+    width:30px;
+    height: 30px;
+    padding: 2px;
+
+  }
+
+  .num_CF {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 36%;
+  }
+  
+  #table_num_CF {
+    background-color: rgba(22, 64, 32, 0.479);
+    width: 350px;
+    height: 100px;
+  }
+  
+  #d_num {
+    border: 3px solid rgba(24, 23, 23, 0.753);
+  }
+  
+  #d_C {
+    border: 3px solid rgba(24, 23, 23, 0.753);
+    
+  }
+  
+  #d_F {
+    border: 3px solid rgba(24, 23, 23, 0.753);
+  }
+  
+  #numeros {
+    margin: auto;
+    height: 25px;
+    font-size: 13px;
+    color: white;
+  }
+  
+  #calientes {
+    margin: auto;
+    font-size: 13px;
+    color: orangered;
+  }
+  
+  #frios {
+    margin: auto;
+    font-size: 13px;
+    color: aqua;
+  }
+  
+  
+  /*BOTONES, FICHAS y BARRA PROGRESO*/
+  
+  
+  .bot_ficha {
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 43%;
+  }
+  
+  #spin {
+    color:black;
+    background-color:lime;
+    padding: 1px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 10px;
+  }
+  
+  #spin:hover {
+    color: white;
+    background-color: black;
+  }
+
+  #bot_borrar {
+    color:black;
+    background-color:lime;
+    padding: 1px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 10px;
+  }
+  
+  
+  #bot_borrar:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  #ficha1 {
+  color:aliceblue;
+  background-color:deeppink;
+  border: 3px solid gold  ;
+  width: 33px; 
+  height: 33px;
+  border-radius: 50%; 
+  text-align: center; 
+  line-height: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
+  }
+  
+  #ficha1:hover{
+    background-color: #45aaf2;
+  }
+  
+  
+  
+  #ficha2 {
+    color:aliceblue;
+    background-color:blue;
+    border: 3px solid gold  ;
+    width: 33px; 
+    height: 33px;
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 70%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+  }
+  
+  #ficha2:hover{
+    background-color: #45aaf2;
+  }
+  
+  #ficha3 {
+    color:aliceblue;
+    background-color:orangered;  
+    border: 3px solid gold;
+    width: 33px; 
+    height: 33px;
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 70%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+  }
+  
+  #ficha3:hover{
+    background-color: #45aaf2;
+  }
+  
+  #ficha4 {
+    color:aliceblue;
+    background-color:purple;
+    border: 3px solid gold ;
+    width: 33px; 
+    height: 33px;
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 70%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+}
+  
+  #ficha4:hover{
+    background-color: #45aaf2;
+  }
+  
+  #bar_progreso {
+    border: 1px solid black;
+    background-color: black;
+    height: 10px;
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 5px;
+    background-color: #73ff00;
+    border-radius: 5px;
+  }
+  
+  
+  /*RULETA*/
+  
+  .ruleta {
+  position: absolute;
+  margin-top:-5%;
+  margin-left: -3%;
+  }
+  
+  #canvas {
+    width: 300px; 
+    height: 300px;
+  }
+  
+  
+  
+  /*TABLA RULETA*/
+  .tabla {
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 31%;
+  }
+  
+  
+  table {
+    align-items: center;
+  }
+  
+  
+  #a {
+    background-color: green;
+    text-align: center;
+    border: 0.2px solid white;
+  
+  }
+  
+  #r {
+  
+    background-color: red;
+    text-align: center;
+    border: 0.2px solid white;
+  
+  }
+  
+  #n {
+    background-color: black;
+    text-align: center;
+    border: 0.2px solid white;
+  }
+  
+  .bot_rojos {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_rojos:hover{
+    background-color: #45aaf2;
+  }
+  
+  
+  
+  .bot_negros {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_negros:hover{
+    background-color: #45aaf2;
+  }
+  
+  .bot_0 {
+    color: white;
+    background-color: green;
+    border: none;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_0:hover{
+    background-color: #45aaf2;
+  }
+  
+  
+  .bot_arriba {
+    color: white;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_arriba:hover{
+    background-color: #45aaf2;
+  }
+  
+  .bot_abajo {
+    color: white;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_abajo:hover{
+    background-color: #45aaf2;
+  }
+  
+  
+  .bot_d {
+    color: white;
+    background-color: green;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bot_d:hover{
+    background-color: #45aaf2;
+  }
+  
+  
+  #rombo_rojo ,#rombo_negro {
+    margin: auto;
+  }
+  
+  #no {
+    empty-cells: hide;
+  
+  }
+  
+  .rombo1 {
+    width: 15.5px;
+    height: 15.5px;
+    background: red;
+    color: transparent;
+    -webkit-transform: rotate(135deg) skew(15deg, 15deg);
+    -moz-transform: rotate(135deg) skew(15deg, 15deg);
+    -ms-transform: rotate(135deg) skew(15deg, 15deg);
+    -o-transform: rotate(135deg) skew(15deg, 15deg);
+    transform: rotate(135deg) skew(15deg, 15deg);
+  }
+  
+  .rombo2 {
+    width: 15.5px;
+    height: 15.5px;
+    background: black;
+    color: transparent;
+    -webkit-transform: rotate(135deg) skew(15deg, 15deg);
+    -moz-transform: rotate(135deg) skew(15deg, 15deg);
+    -ms-transform: rotate(135deg) skew(15deg, 15deg);
+    -o-transform: rotate(135deg) skew(15deg, 15deg);
+    transform: rotate(135deg) skew(15deg, 15deg);
+  }
+  
+  /*BOTON COBRAR Y BENEFICIO*/
+  
+  
+  .beneficio_cobrar {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 12%;
+  }
+  
+  
+  #beneficio {
+    background-color: black;
+    color: gold;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5%;
+    padding:5px;
+    font-size: 11px;
+  }
+  
+  #cobrar {
+    width: 68px;
+    height: 68px;
+    font-family: serif;
+    color: aliceblue;
+    background-color: rgb(192, 44, 44);
+    border: 3px solid black;
+    border-radius: 35%;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #cobrar:hover{
+    background-color: #45aaf2;
+    color: black;
+  }
+  
+  
+
+}

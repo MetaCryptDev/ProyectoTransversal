@@ -1,0 +1,727 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(Imagenes/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#logo{
+  position: absolute;
+  top: 2px;
+  left: 2%;
+  width: 130px;
+  height: auto;
+}
+
+#titulo{
+  position: absolute;
+  top: 2%;
+  right: 500px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  width: 230px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* LUGAR DE LA CARRERA */
+  #lugarHoraCarrera{
+    position: absolute;
+    top: 2%;
+    right: 500px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    width: 430px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+#horaCarrera{
+  margin-left: 30%;
+}
+
+#fechaHora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    width: 230px;
+    height: 40px;
+    padding: 0%;
+    position: absolute;
+    top: 2%;
+    right: 2%; 
+  }
+
+  #hora{
+    margin-left: 7%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000000;
+    padding: 50px;
+    position: relative;
+  }
+
+/* CUADRO MEDIO DE LA IZQUIERDA */
+  #progresoCorredores{
+    background: #9b9898;
+    opacity: 60%;
+    color: black;
+    width: 440px;
+    height: 635px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;    
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  .apuesta{
+    position: absolute;
+    bottom: 7%;
+    left: 33%;  
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(274deg, #fc0d0d 13.29%, rgb(235, 115, 67) 86.1%);
+  }
+
+  #progresoCorredoresInfo{
+    color: black;
+    width: 440px;
+    height: 635px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;    
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  #progresoCorredoresInfo #corredorInfo1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 6.6%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 6.6%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 6.6%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo2{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 16.6%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id2{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 16.6%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia2{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 16.6%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo3{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 26.6%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id3{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 26.6%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia3{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 26.6%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo4{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 36.5%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id4{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 36.5%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia4{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 36.5%;
+    right: 6%;
+    text-align: center;
+  }
+  
+  #progresoCorredoresInfo #corredorInfo5{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 46%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id5{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 46%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia5{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 46%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo6{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 56%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id6{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 56%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia6{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 56%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo7{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 66%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id7{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 66%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia7{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 66%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #corredorInfo8{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 76%;
+    left: 4%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #id8{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 76%;
+    left: 40%;
+    text-align: center;
+  }
+
+  #progresoCorredoresInfo #ganancia8{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 76%;
+    right: 6%;
+    text-align: center;
+  }
+
+  #jugar{
+    position: absolute;
+    top: 40%;
+    right: 40%; 
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    color: black;
+    background: linear-gradient(274deg, #71f519 13.29%, #33f091 86.1%);
+  }
+
+  #nuevaCarrera{
+    position: absolute;
+    bottom: 40%;
+    right: 40%; 
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    color: white;
+    background: linear-gradient(274deg, #194cf5 13.29%, #33a4f0 86.1%);
+  }
+
+
+/* CUADRO MEDIO DE LA DERECHA */
+  #cuadroMedio{
+    background: #9b9898;
+    opacity: 60%;
+    color: black;
+    width: 940px;
+    height: 420px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    bottom: 29.5%;
+    right: 2%;    
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  #cuadroMedioInfo{
+    color: black;
+    width: 940px;
+    height: 420px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    bottom: 29.5%;
+    right: 2%;    
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  #cuadroMedioInfo #corredor1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso1{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 4%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor2{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso2{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 14%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor3{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso3{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 24%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor4{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso4{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 34%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor5{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso5{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 44%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor6{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso6{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 54%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor7{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso7{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 64%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #corredor8{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    text-align: center;
+  }
+
+  #cuadroMedioInfo #progreso8{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 74%;
+    left: 18%;
+    text-align: center;
+  }
+
+  #podio{
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 240px;
+    right: 50px;
+  }
+
+  #ganador1{
+    position: absolute;
+    top: 65px;
+    right: 143px;
+    color: yellow;
+  }
+
+  #perroGana1{
+    position: absolute;
+    top: 90px;
+    right: 120px;
+    z-index: 1;
+  }
+
+  #ganador2{
+    color: red;
+    position: absolute;
+    top: 170px;
+    right: 265px;
+  }
+
+  #perroGana2{
+    position: absolute;
+    top: 210px;
+    right: 50px;
+    z-index: 1;
+  }
+
+  #ganador3{
+    position: absolute;
+    top: 185px;
+    right: 38px;
+    color: lightgreen;
+  }
+
+  #perroGana3{
+    position: absolute;
+    top: 190px;
+    right: 240px;
+    z-index: 1;
+  }
+
+  #progressBar1{
+    width: 220px;
+  }
+
+  #progressBar2{
+    width: 220px;
+  }
+
+  #progressBar3{
+    width: 220px;
+  }
+
+  #progressBar4{
+    width: 220px;
+  }
+
+  #progressBar5{
+    width: 220px;
+  }
+
+  #progressBar6{
+    width: 220px;
+  }
+
+  #progressBar7{
+    width: 220px;
+  }
+
+  #progressBar8{
+    width: 220px;
+  }
+  
+/* CUADRO INFERIOR */
+  #saldo {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 14%;
+    right: 53%;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+#apuesta {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 3.5%;
+    right: 53%;
+    width: 342px;
+    height: auto;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+#ganancias {
+  background-color: black;
+  color: yellow;
+  font-size: 30px;
+  width: 170px;
+  height: 150px;
+  padding: 0.6%;
+  position: absolute;
+  bottom: 4%;
+  right: 28%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  #cuadroInfo {
+    background: #9b9898;
+    opacity: 60%;
+    color: black;
+    width: 940px;
+    height: 175px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+    right: 2%;    
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  .ingresar{
+    position: absolute;
+    bottom: 17%;
+    right: 6%;  
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(274deg, #a00dfc 13.29%, #eb43cc 86.1%);
+  }
+
+  .retirar{
+    position: absolute;
+    bottom: 9%;
+    right: 6%; 
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(274deg, #f51c19 13.29%, #f0be33 86.1%);
+  }
+
+  #info span {
+  margin-left: 10%;
+  font-size: 200%;
+  }
+
+  /* Estilos para los modales */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#btnRetirarSaldo{
+  text-align: right;
+  margin-right: 10px;
+}
